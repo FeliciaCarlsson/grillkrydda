@@ -1,59 +1,79 @@
-.openbutton {
-  height: 6vh;
-  width: 8vh;
-  padding-top: 1.5vh;
-  padding-left: 1.5vh;
-  background-color: grey;
-  color: white;
-  font-size: 3vh;
-  font-family: helvetica;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
 }
 
-.openbutton:hover {
-  background-color: black;
+body {
+  overflow-x: hidden;
+}
+
+/* navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  z-index: 5;
+}
+
+h1 {
+  padding-left: 5vw;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+h1 a {
+  text-decoration: none;
+  color: black;
+}
+
+.burger{
+  font-size:40px;
+  color: #C7C7C7;
+  cursor:pointer;
+  padding-right: 5vw;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.5);
+  overflow-y: hidden;
   transition: 0.5s;
 }
 
-/* The Overlay (background) */
-.overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */
-  height: 100%;
-  width: 0;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  background-color: rgb(0,0,0); /* Black fallback color */
-  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-}
-
-/* Position the content inside the overlay */
 .overlay-content {
   position: relative;
-  top: 25%; /* 25% from the top */
-  width: 100%; /* 100% width */
-  text-align: center; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
 }
 
-/* The navigation links inside the overlay */
 .overlay a {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: #818181;
-  display: block; /* Display block instead of inline */
-  transition: 0.3s; /* Transition effects on hover (color) */
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
 }
 
-/* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+  color: #DEDEDE;
 }
 
-/* Position the close button (top right corner) */
 .overlay .closebtn {
   position: absolute;
   top: 20px;
@@ -61,12 +81,306 @@
   font-size: 60px;
 }
 
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
   .overlay a {font-size: 20px}
   .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
   }
+}
+
+/* rubrik + bild index.html */
+
+.rubrikochtext1 {
+  margin-top: 17vw;
+  margin-right: 10vw;
+  margin-left: 10vw;
+}
+
+.rubrikochtext1 p, .rubrikochtext2 p, h2 {
+  font-weight: lighter;
+
+}
+
+.rubrikochtext1 p, .rubrikochtext2 p, {
+  margin-right: 10vw;
+  margin-top: 2vw;
+}
+
+p {
+  font-size: 2vw;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 5vw;
+  font-weight: bold;
+}
+
+.kryddsked {
+  width: 100%;
+  margin-bottom: 6vw;
+  margin-top: 6vw;
+  padding-left: 5vw;
+}
+
+/* mer än bara en krydda... + kryddburk */
+
+.rubrikochtext2 {
+  padding-left: 13vw;
+  padding-top: 7vw;
+  padding-bottom: 7vw;
+  background-color: #f3f3f0;
+  height: 40vw;
+}
+
+.rubrikochtext2 h2 {
+  color: #F0AD57;
+}
+
+.wikipedia {
+  padding: 2vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  background-color: white;
+  border-radius: 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  position: relative;
+  top: 5vw;
+  font-size: 2vw;
+}
+
+.kryddburk {
+  height: 40vw;
+  background-color: #f3f3f0;
+  padding: 7vw;
+  padding-left: 0;
+  padding-right: 20vw;
+}
+
+/* ingredienser karusell */
+
+.ingredienser {
+  text-align: center;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  font-size: 3vw;
+}
+
+.list {
+  height: 40vw;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%)
+}
+
+.list li {
+  list-style-type: none;
+  width: 28vw;
+  height: 28vw;
+  opacity: .4;
+  position: absolute;
+  left: 50%;
+  margin-left: -15vw;
+  border-radius: 2px;
+  background: #E5E4E2;
+  transition: transform 1s, opacity 1s;
+}
+
+.list .act {
+  opacity: 1;
+}
+
+.list .prev,
+.list .next {
+  cursor: pointer;
+}
+
+.list .prev {
+  transform: translateX(-30vw) scale(.85);
+}
+
+.list .next {
+  transform: translateX(30vw) scale(.85);
+}
+
+.list .hide {
+  transform: translateX(-50vw) scale(.85);
+}
+
+.list .new-next {
+  transform: translateX(50vw) scale(.85);
+}
+
+.list .hide,
+.list .new-next {
+  opacity: 0;
+  transition: opacity .5s, transform .5s;
+}
+
+.swipe {
+  width: 270px;
+  height: 200px;
+  background-color: green;
+  border-radius: 2px;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+}
+
+/* rubrik + bild matinspo.html */
+
+.plate {
+  width: 60%;
+  margin-left: 19vw;
+  margin-bottom: 6vw;
+  margin-top: 4vw;
+}
+
+.matinspo {
+  text-align: center;
+  margin-top: 19vw;
+  color: white;
+  font-weight: bold;
+}
+
+.matinspo p {
+  margin-left: 35vw;
+  margin-right: 35vw;
+  color: black;
+}
+
+/* insporutor */
+
+.ruta1, .ruta2, .ruta3, .ruta4 {
+  background-color: #f3f3f0;
+  height: 40vw;
+  margin-top: 6vw;
+  border-radius: 10px;
+}
+
+.ruta1, .ruta3 {
+  margin-left: 10vw;
+  margin-right: 3vw;
+}
+
+.ruta2, .ruta4 {
+  margin-right: 10vw;
+  margin-left: 3vw;
+}
+
+.ruta3, .ruta4 {
+  margin-bottom: 10vw;
+}
+
+.ruta1 img, .ruta2 img, .ruta3 img, .ruta4 img {
+  width: 15vw;
+  border-radius: 360px;
+  margin: 2.5vw;
+  margin-bottom: 0;
+}
+
+.ruta1 h3, .ruta2 h3, .ruta3 h3, .ruta4 h3 {
+  font-size: 3vw;
+  margin-top: 4vw;
+}
+
+.ruta1 p, .ruta2 p, .ruta3 p, .ruta4 p {
+  margin: 3vw;
+  margin-top: 0;
+  font-size: 2vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .ruta1, .ruta2, .ruta3, .ruta4 {
+    height: 40vw;
+    margin-top: 10vw;
+    margin-left: 14vw;
+    margin-right: 14vw;
+    margin-bottom: 0;
+    border-radius: 10px;
+  }
+
+  .ruta4 {
+    margin-bottom: 12vw;
+  }
+
+  .ruta1 img, .ruta2 img, .ruta3 img, .ruta4 img {
+    margin-left: 5.5vw;
+    margin-top: 3.5vw;
+    margin-bottom: 0;
+  }
+
+  .ruta1 h3, .ruta2 h3, .ruta3 h3, .ruta4 h3 {
+    font-size: 5vw;
+    margin-top: 7vw;
+    margin-left: -12vw;
+  }
+
+  .ruta1 p, .ruta2 p, .ruta3 p, .ruta4 p {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 0;
+    font-size: 2.5vw;
+  }
+}
+
+/* footer */
+
+footer {
+  background-color: #f3f3f0;
+  height: 30vw;
+}
+
+.footerflex {
+  display: flex;
+  justify-content: space-between;
+  margin: 5vw;
+}
+
+.footerinfo1 h3, .footerinfo2 h3, .footerlinks h3 {
+  color: #F0AD57;
+  font-weight: 800;
+  font-size: 2vw;
+}
+
+.footerinfo1 h2 {
+  font-size: 5vw;
+  color: #565656;
+}
+
+.footerinfo1 p {
+  color: #565656;
+  font-weight: bold;
+}
+
+.footerinfo2 p {
+  margin-top: 1vw;
+  font-size: 2vw;
+  font-weight: bold;
+  color: #565656;
+}
+
+.footerlinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerlinks a {
+  text-decoration: none;
+  color: #565656;
+  font-size: 2vw;
+  font-weight: bolder;
+}
+
+.footerlinks a:hover {
+  color: #EE4E34;
+}
+
+.footerlinks h3 {
+  margin-bottom: 1vw;
 }
