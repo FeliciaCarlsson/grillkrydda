@@ -99,11 +99,6 @@ h1 a {
   margin-left: 10vw;
 }
 
-.rubrikochtext1 p, .rubrikochtext2 p, h2 {
-  font-weight: lighter;
-
-}
-
 .rubrikochtext1 p, .rubrikochtext2 p, {
   margin-right: 10vw;
   margin-top: 2vw;
@@ -124,6 +119,36 @@ h2 {
   margin-bottom: 6vw;
   margin-top: 6vw;
   padding-left: 5vw;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .rubrikochtext1 {
+    margin-top: 23vw;
+    margin-right: 10vw;
+    margin-left: 10vw;
+  }
+
+  .rubrikochtext1 p, .rubrikochtext2 p, {
+    margin-right: 10vw;
+    margin-top: 2vw;
+  }
+
+  .rubrikochtext1 p {
+    display: none;
+  }
+
+  h2 {
+    font-size: 8vw;
+    font-weight: bold;
+  }
+
+  .kryddsked {
+    width: 100%;
+    margin-bottom: 10vw;
+    margin-top: 10vw;
+    padding-left: 5vw;
+  }
 }
 
 /* mer än bara en krydda... + kryddburk */
@@ -160,6 +185,41 @@ h2 {
   padding: 7vw;
   padding-left: 0;
   padding-right: 20vw;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .rubrikochtext2 {
+    padding-left: 10vw;
+    padding-top: 7vw;
+    padding-bottom: 7vw;
+    height: 80vw;
+  }
+
+  .rubrikochtext2 h2 {
+    margin-top: 15vw;
+    font-size: 6vw;
+  }
+
+  .rubrikochtext2 p {
+    font-size: 3vw;
+    margin-right: 4vw;
+  }
+
+  .wikipedia {
+    padding: 2vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    top: 5vw;
+    font-size: 3vw;
+  }
+
+  .kryddburk {
+    height: 60vw;
+    padding-top: 17vw;
+    padding-bottom: 17vw;
+    margin-left: -5vw;
+  }
 }
 
 /* ingredienser karusell */
