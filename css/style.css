@@ -444,3 +444,9 @@ footer {
 .footerlinks h3 {
   margin-bottom: 1vw;
 }
+
+@media only screen and (max-width: 600px) {
+  .footerlinks a, .footerinfo1 p,.footerinfo2 p, .footerinfo1 h3, .footerinfo2 h3, .footerlinks h3 {
+    font-size: 2.5vw;
+  }
+}
