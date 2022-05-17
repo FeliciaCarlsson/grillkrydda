@@ -99,7 +99,7 @@ h1 a {
   margin-left: 10vw;
 }
 
-.rubrikochtext1 p, .rubrikochtext2 p, {
+.rubrikochtext1 p, .rubrikochtext2 p {
   margin-right: 10vw;
   margin-top: 2vw;
 }
@@ -127,11 +127,6 @@ h2 {
     margin-top: 23vw;
     margin-right: 10vw;
     margin-left: 10vw;
-  }
-
-  .rubrikochtext1 p, .rubrikochtext2 p, {
-    margin-right: 10vw;
-    margin-top: 2vw;
   }
 
   .rubrikochtext1 p {
@@ -292,11 +287,18 @@ h2 {
   opacity: 0;
 }
 
+.list li img {
+  width: 28vw;
+  height: 28vw;
+  overflow: hidden;
+
+}
+
 /* rubrik + bild matinspo.html */
 
 .plate {
   width: 60%;
-  margin-left: 19vw;
+  justify-self: center;
   margin-bottom: 6vw;
   margin-top: 4vw;
 }
