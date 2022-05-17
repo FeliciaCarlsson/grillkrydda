@@ -157,7 +157,7 @@ h2 {
 }
 
 .rubrikochtext2 h2 {
-  color: #F0AD57;
+  color: #ed9f3b;
 }
 
 .wikipedia {
@@ -180,7 +180,6 @@ h2 {
   padding: 7vw;
   padding-left: 0;
   padding-right: 20vw;
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -405,7 +404,7 @@ footer {
 }
 
 .footerinfo1 h3, .footerinfo2 h3, .footerlinks h3 {
-  color: #F0AD57;
+  color: #ed9f3b;
   font-weight: 800;
   font-size: 2vw;
 }
