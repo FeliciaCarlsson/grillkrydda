@@ -1,3 +1,5 @@
+
+/* drop down meny */
 function openNav() {
   document.getElementById("myNav").style.height = "100%";
 }
@@ -8,10 +10,7 @@ function closeNav() {
 
 
 
-
-
-
-
+/* karusell */
 
 const $ = selector => {
   return document.querySelector(selector);

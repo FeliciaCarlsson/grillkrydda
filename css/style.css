@@ -2,10 +2,17 @@
   margin: 0;
   padding: 0;
   font-family: 'Nunito', sans-serif;
+  overflow-x: hidden;
 }
 
-body {
-  overflow-x: hidden;
+p {
+  font-size: 2vw;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 5vw;
+  font-weight: bold;
 }
 
 /* navbar */
@@ -40,6 +47,8 @@ h1 a {
   cursor:pointer;
   padding-right: 5vw;
 }
+
+/* själva menyn som slidear ner när man trycker på knappen */
 
 .overlay {
   height: 0%;
@@ -81,6 +90,8 @@ h1 a {
   font-size: 60px;
 }
 
+/* mobilanpassning av menyn */
+
 @media screen and (max-height: 450px) {
   .overlay {overflow-y: auto;}
   .overlay a {font-size: 20px}
@@ -102,16 +113,6 @@ h1 a {
 .rubrikochtext1 p, .rubrikochtext2 p {
   margin-right: 10vw;
   margin-top: 2vw;
-}
-
-p {
-  font-size: 2vw;
-  line-height: 1.6;
-}
-
-h2 {
-  font-size: 5vw;
-  font-weight: bold;
 }
 
 .kryddsked {
@@ -146,8 +147,7 @@ h2 {
   }
 }
 
-/* mer än bara en krydda... + kryddburk */
-
+/* text + rubrik brevid krydburken */
 .rubrikochtext2 {
   padding-left: 13vw;
   padding-top: 7vw;
@@ -159,6 +159,8 @@ h2 {
 .rubrikochtext2 h2 {
   color: #e39129;
 }
+
+/* knapp till wikipedia */
 
 .wikipedia {
   padding: 2vw;
@@ -174,6 +176,8 @@ h2 {
   font-size: 2vw;
 }
 
+/* bild på kryddburk */
+
 .kryddburk {
   height: 40vw;
   background-color: #f3f3f0;
@@ -181,6 +185,8 @@ h2 {
   padding-left: 0;
   padding-right: 20vw;
 }
+
+/* mobilanpassning av sektionen med kryddburk + text */
 
 @media only screen and (max-width: 600px) {
   .rubrikochtext2 {
@@ -338,6 +344,8 @@ h2 {
   margin-bottom: 10vw;
 }
 
+/* styling av det rutorna innehåller */
+
 .ruta1 img, .ruta2 img, .ruta3 img, .ruta4 img {
   width: 15vw;
   border-radius: 360px;
@@ -355,6 +363,8 @@ h2 {
   margin-top: 0;
   font-size: 2vw;
 }
+
+/* mobilanpassning av rutorna */
 
 @media only screen and (max-width: 600px) {
   .ruta1, .ruta2, .ruta3, .ruta4 {
@@ -403,11 +413,15 @@ footer {
   margin: 5vw;
 }
 
+/* orangea rubriker i footern */
+
 .footerinfo1 h3, .footerinfo2 h3, .footerlinks h3 {
   color: #e39129;
   font-weight: 800;
   font-size: 2vw;
 }
+
+/* text under orange rubrik längst till vänster */
 
 .footerinfo1 h2 {
   font-size: 5vw;
@@ -419,12 +433,16 @@ footer {
   font-weight: bold;
 }
 
+/* text under orange rubrik i mitten */
+
 .footerinfo2 p {
   margin-top: 1vw;
   font-size: 2vw;
   font-weight: bold;
   color: #565656;
 }
+
+/* kolumn med länkar */
 
 .footerlinks {
   display: flex;
@@ -445,6 +463,8 @@ footer {
 .footerlinks h3 {
   margin-bottom: 1vw;
 }
+
+/* mobilanpassning av footern */
 
 @media only screen and (max-width: 600px) {
   .footerlinks a, .footerinfo1 p,.footerinfo2 p, .footerinfo1 h3, .footerinfo2 h3, .footerlinks h3 {
